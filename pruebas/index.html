@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html ng-app='pagesRouting'>
+<head>
+  <link rel="stylesheet" href="//netdna.bootstrapcdn.com/bootstrap/3.0.0/css/bootstrap.min.css" />
+</head>
+<body ng-controller='mainController'>
+  <header>
+    <h1>Angular Routing</h1>
+      <nav>
+        <ul>
+          <li><a href="#inicio">Inicio</a></li>
+          <li><a href="#acerca">Acerca de</a></li>
+          <li><a href="#contactar">Contactar</a></li>
+          <li><a href="#terminos">Terminos de servicio</a></li>         	</ul>
+      </nav>
+    </header>
+    <div id="main">
+      <!-- Aquí inyectamos las vistas -->
+      <div ng-view></div>
+    </div>
+    <script src="//ajax.googleapis.com/ajax/libs/angularjs/1.4.0-beta.1/angular.min.js"></script>
+  <script src="//ajax.googleapis.com/ajax/libs/angularjs/1.4.0-beta.1/angular-route.js"></script>
+    <script src="main.js"></script>
+  </body>
+  </html>
