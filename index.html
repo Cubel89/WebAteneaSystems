@@ -1,12 +1,28 @@
 <!DOCTYPE html>
-<html>
-    <head>
-        <title>Atenea Systems Web</title>
-        <meta charset="utf-8" />
-    </head>
-    <body>
-        <h1>Configurando web</h1>
-        <h2>Disponibilidad proximamente ...</h2>
-        <!--  En trabajo -->
-    </body>
+<html ng-app='pagesRouting'>
+	<head>
+		<link rel="stylesheet" media="all" href="css/font.css" />
+		<link rel="stylesheet" media="all" href="css/all.css" />
+		<link rel="stylesheet" media="screen" href="css/pc.css" />
+	</head>
+	<body ng-controller='mainController'>
+		<header>
+			<h1>Atenea Systems</h1>
+			<nav id="menu">
+				<ul>
+					<li><a href="#inicio">Inicio</a></li>
+					<li><a href="#acerca">Acerca de</a></li>
+					<li><a href="#contactar">Contactar</a></li>
+					<li><a href="#terminos">Terminos de servicio</a></li>
+				</ul>
+			</nav>
+		</header>
+		<div id="main">
+			<!-- Aquí inyectamos las vistas -->
+			<div ng-view></div>
+		</div>
+		<script src="//ajax.googleapis.com/ajax/libs/angularjs/1.4.0-beta.1/angular.min.js"></script>
+		<script src="//ajax.googleapis.com/ajax/libs/angularjs/1.4.0-beta.1/angular-route.js"></script>
+		<script src="main.js"></script>
+	</body>
 </html>

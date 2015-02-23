@@ -1,0 +1,88 @@
+body {
+	font-size: 18px;
+}
+.centrar {
+	width: 80%;
+	margin: 0 auto;
+}
+/************************************************************
+------------------------    MENU    -------------------------
+************************************************************/
+nav#menu {
+	font-size: 24px;
+	text-align: right;
+}
+nav#menu ul {
+	list-style: none;
+}
+nav#menu ul li {
+	display: inline;
+	padding: 10px;
+}
+
+/************************************************************
+----------------------    CONTENIDO    ----------------------
+************************************************************/
+div#main div {
+
+}
+
+div#main div h1 {
+	color: #999;
+	height: 90px;
+	background: #f9f9f9;
+	padding: 40px 0 0 50px;
+	border: dashed #dbdbdb;
+	border-width: 3px 0;
+}
+/************************
+* CONTACTAR
+************************/
+form#contact {
+	display: flex;
+	flex-flow: colum nowrap;
+	justify-content: space-between;
+}
+form#contact div{
+	display: flex;
+	flex-flow: column nowrap;
+	justify-content: space-between;
+	flex-grow: 1;
+}
+form#contact div#cont2::nth-of-type(2){
+	flex-grow: 2;
+}
+form#contact label, input[type='submit'],input[type='reset']{
+	border: 2px solid #ccc;
+	border-radius: 5px;
+	padding: 20px;
+	background: #fdfdfd;
+	margin: 10px 10px;
+}
+form#contact label input,textarea {
+	border: 2px solid #ccc;
+	border-radius: 5px;
+	padding: 10px;
+	margin: 10px 0 0 20px;
+	width: 85%;
+	background: #fdfdfd;
+	display: block;
+	font-size: 18px;
+}
+from#contact textarea {
+/*	height: 200px;*/
+}
+form#contact input[type='submit']{
+	color: #609675;
+	background: #cbf2da;
+	font-size: 18px;
+	font-weight: bold;
+	border-color: #2db561;
+}
+form#contact input[type='reset']{
+	color: #ba3f5e;
+	background: #ef8ba5;
+	font-size: 18px;
+	font-weight: bold;
+	border-color: #ba3f5e;
+}
