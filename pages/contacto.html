@@ -4,28 +4,42 @@
 		<label>Nombre
 			<input type="text" autofocus required placeholder="Miguel Garcia" />
 		</label>
+		<label>Telefono
+		<input type="tel" required placeholder="677777777" />
+		</label>
+		<label>Empresa
+			<input type="text" placeholder="Atenea Systems" />
+		</label>
 		<label>Email
 			<input type="email" required placeholder="ejemplo@ateneasystems.es" />
-		</label>
-		<label>Asunto
-			<input type="text" required placeholder="Atenea Systems" />
 		</label>
 	</div>
 
 	<div id="con2">
-		<label>Empresa
-			<input type="text" placeholder="Atenea Systems" />
+		<label>Asunto
+			<input type="text" required placeholder="Atenea Systems" />
 		</label>
 		<label>Mensaje
 			<textarea required></textarea>
 		</label>
-	</div>
 
-	<div id="con3">
-		<label>Telefono
-		<input type="tel" required placeholder="677777777" />
+		<label>Adjuntar archivo
+			<input type="file" />
 		</label>
+		<span id="terminos">
+			<input type="checkbox" required />
+			Acepto los <a href="#terminos">Aterminos de servicio.</a>
+
+		</span>
 		<input type="submit" value="Enviar" />
 		<input type="reset" value="Cancelar" />
+
 	</div>
+
+<!--
+	<div id="con3">
+
+
+	</div>
+-->
 </form>
