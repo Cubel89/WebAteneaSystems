@@ -1,28 +1,36 @@
 <!DOCTYPE html>
-<html ng-app='pagesRouting'>
+<html ng-app="pagesRouting">
 	<head>
 		<link rel="stylesheet" media="all" href="css/font.css" />
 		<link rel="stylesheet" media="all" href="css/all.css" />
 		<link rel="stylesheet" media="screen" href="css/pc.css" />
+		<link rel="stylesheet" href="./icons/css/font-awesome.min.css" />
 	</head>
-	<body ng-controller='mainController'>
+	<body ng-controller="mainController">
 		<header>
 			<h1>Atenea Systems</h1>
 			<nav id="menu">
 				<ul>
-					<li><a href="#inicio">Inicio</a></li>
+					<li><a href="#inicio"><i class="fa fa-home"></i>Inicio</a></li>
 					<li><a href="#acerca">Acerca de</a></li>
 					<li><a href="#contactar">Contactar</a></li>
 					<li><a href="#terminos">Terminos de servicio</a></li>
 				</ul>
 			</nav>
 		</header>
-		<div id="main">
+		<section id="main">
 			<!-- Aquí inyectamos las vistas -->
-			<div ng-view></div>
-		</div>
+			<article ng-view></article>
+		</section>
+		<footer><i class="fa fa-folder"></i>
+			<div>Url</div>
+			<div>Comunidad</div>
+			<div>Contacto</div>
+			<cite>Copyright &copy; 2015 AteneaSystems.</cite>
+		</footer>
 		<script src="//ajax.googleapis.com/ajax/libs/angularjs/1.4.0-beta.1/angular.min.js"></script>
 		<script src="//ajax.googleapis.com/ajax/libs/angularjs/1.4.0-beta.1/angular-route.js"></script>
 		<script src="main.js"></script>
+		<script src="js/jquery-1.11.2.min.js"></script>
 	</body>
 </html>

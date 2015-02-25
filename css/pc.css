@@ -23,17 +23,18 @@ nav#menu ul li {
 /************************************************************
 ----------------------    CONTENIDO    ----------------------
 ************************************************************/
-div#main div {
+section#main article {
 
 }
 
-div#main div h1 {
+section#main article h1 {
 	color: #999;
 	height: 90px;
 	background: #f9f9f9;
 	padding: 40px 0 0 50px;
 	border: dashed #dbdbdb;
 	border-width: 3px 0;
+	font-size: 40px;
 }
 /************************
 * CONTACTAR
@@ -49,8 +50,8 @@ form#contact div{
 	justify-content: space-between;
 	flex-grow: 1;
 }
-form#contact div#cont2::nth-of-type(2){
-	flex-grow: 2;
+form#contact div:nth-of-type(2){
+	flex-grow: 4;
 }
 form#contact label, input[type='submit'],input[type='reset']{
 	border: 2px solid #ccc;
@@ -64,13 +65,13 @@ form#contact label input,textarea {
 	border-radius: 5px;
 	padding: 10px;
 	margin: 10px 0 0 20px;
-	width: 85%;
+	width: calc(100% - 60px);
 	background: #fdfdfd;
 	display: block;
 	font-size: 18px;
 }
 from#contact textarea {
-/*	height: 200px;*/
+	height: 200px;
 }
 form#contact input[type='submit']{
 	color: #609675;
@@ -78,6 +79,8 @@ form#contact input[type='submit']{
 	font-size: 18px;
 	font-weight: bold;
 	border-color: #2db561;
+	cursor: pointer;
+	width: 30%;
 }
 form#contact input[type='reset']{
 	color: #ba3f5e;
@@ -85,4 +88,51 @@ form#contact input[type='reset']{
 	font-size: 18px;
 	font-weight: bold;
 	border-color: #ba3f5e;
+	cursor: pointer;
+	width: 30%;
 }
+form#contact span#terminos{
+	display: inline;
+	margin: 10px 0 10px 30px;
+
+}
+
+@media screen and (max-width:600px){
+	form#contact {
+		display: block;
+	}
+}
+/************************************************************
+-----------------------    INICIO    ------------------------
+************************************************************/
+article#inicio {
+
+}
+
+article#inicio section#logos{
+	text-align: center;
+}
+article#inicio section#logos img{
+	max-width: 230px;
+	margin: 50px;
+}
+
+/************************************************************
+-----------------------    FOOTER    ------------------------
+************************************************************/
+footer {
+	background: #353030;
+	color: white;
+	height: 400px;
+	width: 100%;
+}
+footer cite {
+	width: 100%;
+	text-align: center;
+	height: 40px;
+	background: #000000;
+	position: sticky;
+	top: 50px;
+	left: 50px;
+}
+
